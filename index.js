@@ -1,18 +1,18 @@
 'use strict'
 
-const express = require('express')
-const bodyParser = require('body-parser')
+require('dotenv').config({path: './dotenv.env'})
+const mongoose = require('mongoose')
+const app = require('./app')
+// mongoose.Promise = require('bluebird')
 
-const app = express()
-const port = process.env.PORT || 5000
+const config = require('./config')
 
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json())
-
-app.get('/', (req, res) => {
-  res.send({ message: 'Hello Wold!' })
-})
-
-app.listen(port, () => {
-  console.log(`API REST running at http://localhost:${port}`)
+mongoose.connect(config.db, (err, res) => {
+  if (err) {
+    return console.log(`Error al conectar base de datos: ${err}`)
+  }
+  console.log('Conexion a la base de datos exitosa....')
+  app.listen(config.port, () => {
+    console.log(`API REST corriendo en http://localhost:${config.port}`)
+  })
 })
