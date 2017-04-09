@@ -4,7 +4,7 @@
   "description": "To Do Server using nodejs+express+monogdb",
   "main": "index.js",
   "scripts": {
-    "test": "xo"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +17,11 @@
   },
   "homepage": "https://github.com/Guerrix/ToDoServer#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2"
   },
   "devDependencies": {
-    "xo": "^0.18.1"
-  },
-  "xo": {
-    "semicolon": false
+    "nodemon": "^1.11.0",
+    "standard": "^10.0.1"
   }
 }
