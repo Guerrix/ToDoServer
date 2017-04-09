@@ -1,0 +1,23 @@
+{
+  "name": "todoserver",
+  "version": "1.0.0",
+  "description": "To Do Server using nodejs+express+monogdb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guerrix/ToDoServer.git"
+  },
+  "author": "Jesus Guerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guerrix/ToDoServer/issues"
+  },
+  "homepage": "https://github.com/Guerrix/ToDoServer#readme",
+  "dependencies": {
+    "espress": "0.0.0",
+    "express": "^4.15.2"
+  }
+}
