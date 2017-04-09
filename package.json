@@ -6,6 +6,10 @@
   "scripts": {
     "start": "nodemon index.js"
   },
+  "engines": {
+    "node": "6.9.5",
+    "npm": "3.10.10"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Guerrix/ToDoServer.git"
