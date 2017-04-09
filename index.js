@@ -13,6 +13,6 @@ app.get('/', (req, res) => {
   res.send({ message: 'Hello Wold!' })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log(`API REST running at http://localhost:${port}`)
 })
